@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyek Elemen Dinamis Ahid</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logoheader">NINJA KEN</div>
+      <div class="menuheader">
+        <a href="#">Tentang Saya</a>
+        <a href="#">Proyek Contoh</a>
+        <a href="#">Hubungi Saya</a>
+        <a href="#">FAQ</a>
+      </div>
+    </header>
+    <main>
+      <div class="portfolio">
+        <h1>NINJA KEN<span>.</span></h1>
+        <h2>MY PORTFOLIO</h2>
+        <img src="images/ninjaken.png" />
+      </div>
+      <div class="aboutme">
+        <h1>Tentang Saya</h1>
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+      </div>
+      <div class="slider-container">
+        <h1>Proyek Contoh</h1>
+        <!-- Slider and Modal 1 -->
+        <div class="slider-item fade">
+          <img
+            id="img1"
+            class="images"
+            src="images/ninjaken.png"
+            alt="Ini Adalah Gambar Ninja Ken"
+          />
+
+          <div id="myModal1" class="modal">
+            <span class="closeModal1">&times;</span>
+            <img class="modalContent" id="image1" />
+            <div id="caption1"></div>
+          </div>
+        </div>
+
+        <!-- Slider and Modal 2 -->
+        <div class="slider-item fade">
+          <img
+            id="img2"
+            class="images"
+            src="images/gurudomba.png"
+            alt="Ini Adalah Gambar Guru Domba"
+          />
+
+          <div id="myModal2" class="modal">
+            <span class="closeModal2">&times;</span>
+            <img class="modalContent" id="image2" />
+            <div id="caption2"></div>
+          </div>
+        </div>
+
+        <!-- Slider and Modal 3 -->
+        <div class="slider-item fade">
+          <img
+            id="img3"
+            class="images"
+            src="images/happy-ninjaken.png"
+            alt="Ini Adalah Gambar Ninja Ken Bahagia"
+          />
+
+          <div id="myModal3" class="modal">
+            <span class="closeModal3">&times;</span>
+            <img class="modalContent" id="image3" />
+            <div id="caption3"></div>
+          </div>
+        </div>
+
+        <!-- Slider and Modal 4 -->
+        <div class="slider-item fade">
+          <img
+            id="img4"
+            class="images"
+            src="images/gurudomba-flying.png"
+            alt="Ini Adalah Gambar Guru Domba Terbang"
+          />
+
+          <div id="myModal4" class="modal">
+            <span class="closeModal4">&times;</span>
+            <img class="modalContent" id="image4" />
+            <div id="caption4"></div>
+          </div>
+        </div>
+
+        <a class="prev" onclick="updateSlide(-1)">&#10094;</a>
+        <a class="next" onclick="updateSlide(1)">&#10095;</a>
+      </div>
+
+      <!-- Validation -->
+      <div class="contactme">
+        <h1>Hubungi Saya</h1>
+        <div class="contactbox">
+          <input type="text" id="emailbox" placeholder="Email (Diperlukan)" />
+          <input
+            type="text"
+            id="messagebox"
+            placeholder="Message (Diperlukan)"
+          />
+          <button id="submitbox" onclick="checking()">Submit</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="logofooter">NINJA KEN</div>
+
+      <!-- Accordion -->
+      <button class="accordion">Help Menu</button>
+        <div class="accordContent">
+          <a href="#">Tentang Saya</a>
+          <a href="#">Proyek Contoh</a>
+          <a href="#">Hubungi Saya</a>
+          <a href="#">FAQ</a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
